@@ -117,8 +117,10 @@ function checkMatch() {
 		counterValue.innerText = `Tries: ${tryCounter}`;
 	}
 	if (matchCounter == COLORS.length / 2) {
+		const horn = document.querySelector('audio');
 		const youWin = document.querySelector("#winner");
 		const resetButton = document.querySelector("button");
+		horn.play();
 		youWin.style.visibility = "visible";
 		resetButton.addEventListener("click", function() {
 			location.reload();
