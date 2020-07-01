@@ -62,7 +62,7 @@ body {
 	transform-style: preserve-3d;
 	transition: transform .5s;
 }
-#memoryCard:hover {
+.memoryCard:hover {
 	cursor: pointer;
 }
 
@@ -97,4 +97,7 @@ body {
 
 button {
 	color: black;
+}
+button:hover {
+	cursor: pointer;
 }
