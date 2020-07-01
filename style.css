@@ -62,6 +62,9 @@ body {
 	transform-style: preserve-3d;
 	transition: transform .5s;
 }
+#memoryCard:hover {
+	cursor: pointer;
+}
 
 .backFace,
 .frontFace {
