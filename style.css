@@ -1,103 +1,105 @@
 * {
-	box-sizing: border-box;
-	color: white;
-	text-shadow: 2px 2px 4px black;
-	font-family: 'Play', sans-serif;
+    box-sizing: border-box;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    font-family: 'Play', sans-serif;
 }
 
 #pickLogo {
-	width: 70px;
-	float: left;
+    width: 70px;
+    float: left;
 }
 
 .textCenter {
-	text-align: center;
+    text-align: center;
 }
 
 h1 {
-	margin-bottom: 5px;
-	font-size: 5em;
+    margin-bottom: 5px;
+    font-size: 5em;
 }
 
 h1,
 #best,
 #counter {
-	clear: both;
+    clear: both;
 }
 
 header {
-	margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 body {
-	background-image: url("img/rink.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+    background-image: url("img/rink.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #counter,
 #best {
-	margin-bottom: 3px;
+    margin-bottom: 3px;
 }
 
 #game {
-	background-color: rgba(54, 54, 54, 0.548);
-	width: 640px;
-	height: 600px;
-	margin: auto;
-	display: flex;
-	flex-wrap: wrap;
-	perspective: 1000px;
-	clear: both;
+    background-color: rgba(54, 54, 54, 0.548);
+    width: 640px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    clear: both;
 }
 
 .memoryCard {
-	width: calc(25% - 10px);
-	height: calc(33.333% - 10px);
-	margin: 5px;
-	position: relative;
-	box-shadow: 1px 1px 5px black;
-	border: 3px solid black;
-	transform-style: preserve-3d;
-	transition: transform .5s;
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    box-shadow: 1px 1px 5px black;
+    border: 3px solid black;
+    transform-style: preserve-3d;
+    transition: transform .5s;
 }
+
 .memoryCard:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .backFace,
 .frontFace {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	transform-style: preserve-3d;
-	backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
 }
 
 .frontFace {
-	transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 .memoryCard.flip {
-	transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 #winner {
-	background-color: rgba(255, 217, 0, 0.6);
-	width: 50%;
-	border-radius: 10px;
-	margin: auto;
-	visibility: hidden;
+    background-color: rgba(255, 217, 0, 0.6);
+    width: 50%;
+    border-radius: 10px;
+    margin: auto;
+    visibility: hidden;
 }
 
 #winner h2 {
-	color: rgb(18, 18, 160);
+    color: rgb(18, 18, 160);
 }
 
 button {
-	color: black;
+    color: black;
 }
+
 button:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
